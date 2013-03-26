@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Buttons</title>
+	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<style type="text/css">
+		.mod-markup{
+			width:100%;
+			height: 300px;
+		}
+		.mod-col{
+			float:left;
+			width: 50%;
+		}
+		.mod-pattern{
+			width:100%;
+		}
+		.clear{
+			clear: both;
+		}
+		aside{
+			float:left;
+		}
+		.mod h2{
+			font-size: 15px;
+		}
+	</style>
+	<script src=http://code.jquery.com/jquery-1.9.1.min.js></script>
+</head>
+<body>
+	<style type="text/css">
+		
+	</style>
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<h1><a href="/">Common Markup & Style</a></h1>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span2">
+				<ul>
+				
+				  
+				
+				  
+				   <li><a href="/patterns/elements/buttons.html">Buttons</a></li>
+				  
+				
+				  
+				   <li><a href="/patterns/navigation/horizontal-links.html">Horizontal Links</a></li>
+				  
+				
+				</ul>
+			</div>
+			<div class="span10">
+				<article>
+					<div class="mod mod-pattern">
+						<h2>PATTERN</h2>
+					</div>
+					<div>
+						<button class="btn">Click Me</button>
+<a href="#" class="btn btn-primary">Click Me</a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn").click(function(){
+  	alert();
+  });
+});
+</script>
+					</div>
+				</article>
+				<div class="clear"></div>
+				<article>
+					<div class="mod mod-col">
+						<h2>HTML</h2>
+						<textarea class="mod-markup"><button class="btn">Click Me</button>
+<a href="#" class="btn btn-primary">Click Me</a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn").click(function(){
+  	alert();
+  });
+});
+</script></textarea>
+					</div>
+				
+					<div class="mod mod-col">
+						<h2>CSS</h2>
+						<textarea class="mod-markup"></textarea>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+	<footer></footer>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>
