@@ -1,104 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Buttons</title>
-	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<title>CSS Style Guide</title>
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/responsive.css" rel="stylesheet">
+	<link href="/css/theme.css" rel="stylesheet">
+	<link href="/css/fonts.css" rel="stylesheet">
+	<link href="/javascripts/google-code-prettify/prettify.css" rel="stylesheet">
+	<script src="/javascripts/jquery.1.8.3.min.js"></script>
+	<script src="/javascripts/google-code-prettify/prettify.js"></script>
+
 	<style type="text/css">
-		.mod-markup{
-			width:100%;
-			height: 300px;
-		}
-		.mod-col{
-			float:left;
-			width: 50%;
-		}
-		.mod-pattern{
-			width:100%;
-		}
-		.clear{
-			clear: both;
-		}
-		aside{
-			float:left;
-		}
+
+
 		.mod h2{
 			font-size: 15px;
 		}
+
+		.example{
+			margin-bottom:40px;
+		}
+
+		.prettyprint{
+			font-size: 0.8em;
+			line-height: 1.5em;
+		}
+		.swatch{
+			padding: 20px; color: white;
+			text-shadow: 0px 2px 0px #000;
+			width: 185px;
+		}
+		.style{
+			margin-bottom: 50px;
+
+		}
+		.spacer{
+			height:30px;
+			width: 100%;
+		}
+
+		.white-text-shadow {
+			text-shadow: 1px 1px 1px #fff;
+			margin-bottom:40px;
+		}
+		.input-signup{
+			width: 256px;
+		}
+
 	</style>
-	<script src=http://code.jquery.com/jquery-1.9.1.min.js></script>
 </head>
 <body>
-	<style type="text/css">
-		
-	</style>
-	<div class="container">
-		<div class="row-fluid">
-			<div class="span12">
-				<h1><a href="/">Common Markup & Style Patterns</a></h1>
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span2">
-				<ul>
-				
-				  
-				
-				  
-				   <li><a href="/patterns/elements/buttons.html">Buttons</a></li>
-				  
-				
-				  
-				   <li><a href="/patterns/navigation/horizontal-links.html">Horizontal Links</a></li>
-				  
-				
-				</ul>
-			</div>
-			<div class="span10">
-				<article>
-					<div class="mod mod-pattern">
-						<h2>PATTERN</h2>
-					</div>
-					<div>
-						<button class="btn">Click Me</button>
-<a href="#" class="btn btn-primary">Click Me</a>
+  <!-- Page Header -->
+<header class="pull-center" id="masthead">
+  <nav class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+          <ul class="nav">
+    
+			
+			  
+			
+			  
+			   <li><a href="#Colors">Colors</a></li>
+			  
+			
+			  
+			   <li><a href="#Buttons">Buttons</a></li>
+			  
+			
+			  
+			   <li><a href="#Thumbnails">Thumbnails</a></li>
+			  
+			
+			  
+			   <li><a href="#Forms">Forms</a></li>
+			  
+			
+			  
+			   <li><a href="#Typography">Typography</a></li>
+			  
+			
+			
+          </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="content" role="main">
+  <section class="section">
+  	  <div class="container">
+<header>
+	<img src="http://giv2giv.org/images/giv2giv-org.png" width="25%" style="margin: 0 auto; display:block; margin-bottom:-25px;"/>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $(".btn").click(function(){
-  	alert();
-  });
-});
-</script>
-					</div>
-				</article>
-				<div class="clear"></div>
-				<article>
-					<div class="mod mod-col">
-						<h2>HTML</h2>
-						<textarea class="mod-markup"><button class="btn">Click Me</button>
-<a href="#" class="btn btn-primary">Click Me</a>
+  	<h1 class="page-header">
+  		CSS Style Guide
+  	</h1>
+  	</header>
+  
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $(".btn").click(function(){
-  	alert();
-  });
-});
-</script></textarea>
-					</div>
-				
-					<div class="mod mod-col">
-						<h2>CSS</h2>
-						<textarea class="mod-markup"></textarea>
-					</div>
-				</article>
-			</div>
+
+
+
+<a name="Colors"></a>
+<div class="style">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="white-text-shadow">Colors</h3>
 		</div>
 	</div>
-	<footer></footer>
-	<script type="text/javascript">
+	<div class="row-fluid">
+		<div class="span12">
+			<article class="example">
+				<div>
+					<span class="swatch" style="background-color: #5D7610;">
+	#5D7610
+</span>
+<span class="swatch" style="background-color: #76883E;">
+	#76883E
+</span>
+<span class="swatch" style="background-color: #94b531;">
+	#94b531
+</span>
+<span class="swatch" style="background-color: #BDDA63;">
+	#BDDA63
+</span>
+<span class="swatch" style="background-color: #C5DA83;">
+	#C5DA83
+</span>
+<div class="spacer"></div>
+<span class="swatch" style="background-color: #555555;">
+	#555555
+</span>
+<span class="swatch" style="background-color: #558866;">
+	#558866
+</span>
+<span class="swatch" style="background-color: #889988;">
+	#889988
+</span>
+<span class="swatch" style="background-color: #777777;">
+	#777777
+</span>
+<span class="swatch" style="background-color: #ccddaa;">
+	#ccddaa
+</span>
+				</div>
+			</article>
+			<a href="#" class="btn toggle-markup">Toggle markup</a>
+			<article class="hide markup">
+					<pre class="prettyprint">&lt;span class=&quot;swatch&quot; style=&quot;background-color: #5D7610;&quot;&gt;
+	#5D7610
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #76883E;&quot;&gt;
+	#76883E
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #94b531;&quot;&gt;
+	#94b531
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #BDDA63;&quot;&gt;
+	#BDDA63
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #C5DA83;&quot;&gt;
+	#C5DA83
+&lt;/span&gt;
+&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #555555;&quot;&gt;
+	#555555
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #558866;&quot;&gt;
+	#558866
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #889988;&quot;&gt;
+	#889988
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #777777;&quot;&gt;
+	#777777
+&lt;/span&gt;
+&lt;span class=&quot;swatch&quot; style=&quot;background-color: #ccddaa;&quot;&gt;
+	#ccddaa
+&lt;/span&gt;</pre>			
+			</article>
+		</div>
+	</div>
+</div>
+ 
 
-	</script>
+
+
+<a name="Buttons"></a>
+<div class="style">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="white-text-shadow">Buttons</h3>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<article class="example">
+				<div>
+					<button class="btn g2g-btn">Click Me</button>
+
+				</div>
+			</article>
+			<a href="#" class="btn toggle-markup">Toggle markup</a>
+			<article class="hide markup">
+					<pre class="prettyprint">&lt;button class=&quot;btn g2g-btn&quot;&gt;Click Me&lt;/button&gt;
+</pre>			
+			</article>
+		</div>
+	</div>
+</div>
+ 
+
+
+
+<a name="Thumbnails"></a>
+<div class="style">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="white-text-shadow">Thumbnails</h3>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<article class="example">
+				<div>
+					<ul class="thumbnails thumbnail-list">
+  <li class="span4">
+    <figure class="thumbnail-figure">
+      <a data-image="images/thumbnails/thumb01.jpg" data-toggle="lightbox" href="#lightbox">
+        <img alt="" src="images/thumbnails/thumb01.jpg">
+        <i style="top: -100px;"></i>
+      </a>
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </figcaption>
+    </figure>
+  </li>
+  <li class="span4">
+    <figure class="thumbnail-figure">
+      <a data-image="images/thumbnails/thumb02.jpg" data-toggle="lightbox" href="#lightbox">
+        <img alt="" src="images/thumbnails/thumb02.jpg">
+        <i style="top: -100px;"></i>
+      </a>
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </figcaption>
+    </figure>
+  </li>
+  <li class="span4">
+    <figure class="thumbnail-figure">
+      <a data-image="images/thumbnails/thumb03.jpg" data-toggle="lightbox" href="#lightbox">
+        <img alt="" src="images/thumbnails/thumb03.jpg">
+        <i></i>
+      </a>
+      <figcaption>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </figcaption>
+    </figure>
+  </li>
+</ul>
+
+				</div>
+			</article>
+			<a href="#" class="btn toggle-markup">Toggle markup</a>
+			<article class="hide markup">
+					<pre class="prettyprint">&lt;ul class=&quot;thumbnails thumbnail-list&quot;&gt;
+  &lt;li class=&quot;span4&quot;&gt;
+    &lt;figure class=&quot;thumbnail-figure&quot;&gt;
+      &lt;a data-image=&quot;images/thumbnails/thumb01.jpg&quot; data-toggle=&quot;lightbox&quot; href=&quot;#lightbox&quot;&gt;
+        &lt;img alt=&quot;&quot; src=&quot;images/thumbnails/thumb01.jpg&quot;&gt;
+        &lt;i style=&quot;top: -100px;&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;span4&quot;&gt;
+    &lt;figure class=&quot;thumbnail-figure&quot;&gt;
+      &lt;a data-image=&quot;images/thumbnails/thumb02.jpg&quot; data-toggle=&quot;lightbox&quot; href=&quot;#lightbox&quot;&gt;
+        &lt;img alt=&quot;&quot; src=&quot;images/thumbnails/thumb02.jpg&quot;&gt;
+        &lt;i style=&quot;top: -100px;&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;span4&quot;&gt;
+    &lt;figure class=&quot;thumbnail-figure&quot;&gt;
+      &lt;a data-image=&quot;images/thumbnails/thumb03.jpg&quot; data-toggle=&quot;lightbox&quot; href=&quot;#lightbox&quot;&gt;
+        &lt;img alt=&quot;&quot; src=&quot;images/thumbnails/thumb03.jpg&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;figcaption&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      &lt;/figcaption&gt;
+    &lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>			
+			</article>
+		</div>
+	</div>
+</div>
+ 
+
+
+
+<a name="Forms"></a>
+<div class="style">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="white-text-shadow">Forms</h3>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<article class="example">
+				<div>
+					<form>
+	<label>Label</label> <input type="text"/>
+</form>
+				</div>
+			</article>
+			<a href="#" class="btn toggle-markup">Toggle markup</a>
+			<article class="hide markup">
+					<pre class="prettyprint">&lt;form&gt;
+	&lt;label&gt;Label&lt;/label&gt; &lt;input type=&quot;text&quot;/&gt;
+&lt;/form&gt;</pre>			
+			</article>
+		</div>
+	</div>
+</div>
+ 
+
+
+
+<a name="Typography"></a>
+<div class="style">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="white-text-shadow">Typography</h3>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12">
+			<article class="example">
+				<div>
+					<h1 class="page-header">h1. Very Very Important</h1>
+<h2>h2. Very Important</h2>
+<h3>h3. Important</h3>
+<h4>h4. Kind of Important</h4>
+<h5>h5. Not Really Important</h5>
+<h6>h6. sdPeople use H6 tags?</h6>
+
+<p>bittering hops lager dunkle becher aau craft beer. aerobic, malt original gravity. ale kolsch scotch ale all-malt copper conditioning wort chiller. abv, brewing balthazar mouthfeel bock double bock/dopplebock. anaerobic berliner weisse barleywine; conditioning tank wit sparge bottle conditioning. trappist pilsner hefe krug enzymes crystal malt lauter tun. caramel malt secondary fermentation length.</p>
+				</div>
+			</article>
+			<a href="#" class="btn toggle-markup">Toggle markup</a>
+			<article class="hide markup">
+					<pre class="prettyprint">&lt;h1 class=&quot;page-header&quot;&gt;h1. Very Very Important&lt;/h1&gt;
+&lt;h2&gt;h2. Very Important&lt;/h2&gt;
+&lt;h3&gt;h3. Important&lt;/h3&gt;
+&lt;h4&gt;h4. Kind of Important&lt;/h4&gt;
+&lt;h5&gt;h5. Not Really Important&lt;/h5&gt;
+&lt;h6&gt;h6. sdPeople use H6 tags?&lt;/h6&gt;
+
+&lt;p&gt;bittering hops lager dunkle becher aau craft beer. aerobic, malt original gravity. ale kolsch scotch ale all-malt copper conditioning wort chiller. abv, brewing balthazar mouthfeel bock double bock/dopplebock. anaerobic berliner weisse barleywine; conditioning tank wit sparge bottle conditioning. trappist pilsner hefe krug enzymes crystal malt lauter tun. caramel malt secondary fermentation length.&lt;/p&gt;</pre>			
+			</article>
+		</div>
+	</div>
+</div>
+ 
+
+
+ </div>
+</section>
+
+</div>
+<script type="text/javascript">
+	$('.toggle-markup').click(function(e){
+		e.preventDefault();
+		$(this).next('.markup').toggle();
+	});
+</script>
+
 </body>
 </html>
